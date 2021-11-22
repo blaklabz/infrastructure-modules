@@ -4,7 +4,7 @@ provider "helm" {
   }
 }
 
-### ELK logging implementation ###
+### ELK logging implementation ####
 
 ## build namespace and secrets
 module "oss-elk-namespaces" {
