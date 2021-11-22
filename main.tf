@@ -13,6 +13,7 @@ module "oss-elk-namespaces" {
 }
 
 module "oss-elk-secrets" {
+  depends_on             = [module.oss-elk-secrets]
   source                 = "./oss-elk-secrets"
   config_path            = "${var.config_path}"
 }
